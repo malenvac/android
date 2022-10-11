@@ -19,12 +19,12 @@ public class SingUp extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sing_up);
 
-        us=(EditText) findViewById(R.id.UserSingUp);
-        nom=(EditText) findViewById(R.id.name);
-        ap=(EditText) findViewById(R.id.lastName);
-        pas=(EditText)findViewById(R.id.PasswordSingUp);
+        us=(EditText) findViewById(R.id.RegUser);
+        pas=(EditText) findViewById(R.id.RegPass);
+        nom=(EditText) findViewById(R.id.RegNombre);
+        ap=(EditText)findViewById(R.id.RegApellido);
 
-        reg=(Button)findViewById(R.id.buttonSingUp);
+        reg=(Button)findViewById(R.id.btnRegRegistrar);
         can=(Button)findViewById(R.id.btnRegCancelar);
         reg.setOnClickListener(this);
         can.setOnClickListener(this);
@@ -36,12 +36,13 @@ public class SingUp extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
     switch (v.getId()){
-        case R.id.buttonSingUp:
+        case R.id.btnRegRegistrar:
             Usuario u=new Usuario();
             u.setUsuario(us.getText().toString());
+            u.setPassword(pas.getText().toString());
             u.setNombre(nom.getText().toString());
             u.setApellidos(ap.getText().toString());
-            u.setPassword(pas.getText().toString());
+
 
             if(!u.isNull()){
                 Toast.makeText(this,"ERROR: Campos vacios", Toast.LENGTH_LONG).show();

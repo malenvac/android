@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_claro"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logoLogin"
+        style="@style/ImageViewLogo"
+        android:layout_width="380dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/descriptionLogo"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/nombreUsuario"
+        android:layout_width="316dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="312dp"
+        android:gravity="center"
+        android:text="Hola menso"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoLogin"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <Button
+        android:id="@+id/btnEditar"
+        style="@style/bottons"
+        android:layout_width="144dp"
+        android:layout_height="46dp"
+        android:background="@drawable/borde_redondo"
+        android:text="Editar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreUsuario"
+        app:layout_constraintVertical_bias="0.277" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        style="@style/bottons"
+        android:layout_width="144dp"
+        android:layout_height="46dp"
+        android:background="@drawable/borde_redondo"
+        android:text="Eliminar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreUsuario"
+        app:layout_constraintVertical_bias="0.277" />
+
+    <Button
+        android:id="@+id/btnMostrar"
+        style="@style/bottons"
+        android:layout_width="144dp"
+        android:layout_height="46dp"
+        android:background="@drawable/borde_redondo"
+        android:text="Mostar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreUsuario"
+        app:layout_constraintVertical_bias="0.46" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        style="@style/bottons"
+        android:layout_width="144dp"
+        android:layout_height="46dp"
+        android:background="@drawable/borde_redondo"
+        android:text="Salir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreUsuario"
+        app:layout_constraintVertical_bias="0.46" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

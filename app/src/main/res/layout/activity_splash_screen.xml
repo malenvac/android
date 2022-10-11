@@ -34,7 +34,7 @@
         app:layout_constraintVertical_bias="0.516" />
 
     <EditText
-        android:id="@+id/UserSingIn"
+        android:id="@+id/User"
         style="@style/TextViewUser"
         android:drawableStart="@drawable/vector_person"
         android:hint="@string/user"
@@ -45,7 +45,7 @@
         app:layout_constraintVertical_bias="0.187" />
 
     <EditText
-        android:id="@+id/PasswordSingIn"
+        android:id="@+id/Pass"
         style="@style/TextViewUser"
         android:drawableStart="@drawable/vector_lock"
         android:ems="10"
@@ -55,7 +55,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/UserSingIn"
+        app:layout_constraintTop_toBottomOf="@+id/User"
         app:layout_constraintVertical_bias="0.04"
         tools:visibility="visible" />
 
@@ -79,7 +79,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PasswordSingIn"
+        app:layout_constraintTop_toBottomOf="@+id/Pass"
         app:layout_constraintVertical_bias="0.182" />
 
     <Button

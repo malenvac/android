@@ -21,74 +21,72 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+
     <TextView
         android:id="@+id/textView"
         style="@style/TextTitlePri"
+        android:layout_width="145dp"
+        android:layout_height="47dp"
         android:text="@string/sing_up"
-        app:layout_constraintBottom_toTopOf="@+id/UserSingUp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoLogin"
-        app:layout_constraintVertical_bias="0.516" />
+        app:layout_constraintTop_toBottomOf="@+id/logoLogin" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/UserSingUp"
+        android:id="@+id/RegUser"
         style="@style/TextViewUser"
+        android:layout_marginTop="16dp"
         android:hint="@string/user"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoLogin"
-        app:layout_constraintVertical_bias="0.162" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.025" />
     <EditText
-        android:id="@+id/name"
+        android:id="@+id/RegPass"
         style="@style/TextViewUser"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="@string/nombre"
-        android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/lastName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/UserSingUp"
-        app:layout_constraintVertical_bias="0.454" />
-
-    <EditText
-        android:id="@+id/lastName"
-        style="@style/TextViewUser"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="@string/apellido"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
-
-
-    <EditText
-        android:id="@+id/PasswordSingUp"
-        style="@style/TextViewUser"
-        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lastName" />
+        app:layout_constraintTop_toBottomOf="@+id/RegUser" />
+
+
+    <EditText
+        android:id="@+id/RegNombre"
+        style="@style/TextViewUser"
+        android:ems="10"
+        android:hint="@string/nombre"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegPass" />
+
+    <EditText
+        android:id="@+id/RegApellido"
+        style="@style/TextViewUser"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/apellido"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegNombre"
+        app:layout_constraintVertical_bias="0.0" />
+
 
     <Button
-        android:id="@+id/buttonSingUp"
+        android:id="@+id/btnRegRegistrar"
         style="@style/bottonsUp"
-        android:layout_marginBottom="88dp"
         android:background="@drawable/borde_redondo"
         android:text="@string/sing_up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/PasswordSingUp"
-        app:layout_constraintVertical_bias="0.927" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.836" />
 
     <Button
         android:id="@+id/btnRegCancelar"
@@ -100,6 +98,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSingUp" />
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistrar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
