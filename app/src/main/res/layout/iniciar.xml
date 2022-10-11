@@ -23,10 +23,12 @@
 
     <TextView
         android:id="@+id/nombreUsuario"
+        style="@style/TextTitlePri"
         android:layout_width="match_parent"
         android:layout_height="47dp"
         android:layout_marginBottom="312dp"
-        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="20sp"
         android:text="Hola usuario"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,10 +46,10 @@
         android:text="Editar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintHorizontal_bias="0.146"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nombreUsuario"
-        app:layout_constraintVertical_bias="0.277" />
+        app:layout_constraintVertical_bias="0.278" />
 
     <Button
         android:id="@+id/btnEliminar"
@@ -58,10 +60,10 @@
         android:text="Eliminar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nombreUsuario"
-        app:layout_constraintVertical_bias="0.277" />
+        app:layout_constraintVertical_bias="0.48" />
 
     <Button
         android:id="@+id/btnMostrar"
@@ -72,23 +74,24 @@
         android:text="Mostar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintHorizontal_bias="0.868"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nombreUsuario"
-        app:layout_constraintVertical_bias="0.46" />
+        app:layout_constraintVertical_bias="0.278" />
 
     <Button
         android:id="@+id/btnSalir"
-        style="@style/bottons"
-        android:layout_width="144dp"
-        android:layout_height="46dp"
-        android:background="@drawable/borde_redondo"
-        android:text="Salir"
+        style="@style/createAccount"
+        android:layout_width="247dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00FFFFFF"
+        android:text="@string/cancelar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nombreUsuario"
-        app:layout_constraintVertical_bias="0.46" />
+        app:layout_constraintVertical_bias="0.852" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

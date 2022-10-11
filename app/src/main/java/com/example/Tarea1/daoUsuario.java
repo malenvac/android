@@ -16,10 +16,10 @@ public class daoUsuario {
     String tabla = "create table if not exists usuario (id integer primary key autoincrement,usuario text,pass text, nombre text, ap text)";
 
     public daoUsuario(Context c){
-        this.c= c;
+        this.c = c;
         sql= c.openOrCreateDatabase(bd, c.MODE_PRIVATE,null);
         sql.execSQL(tabla);
-        u=new Usuario();
+        u = new Usuario();
 
     }
     public boolean insertUsuario(Usuario u){
@@ -47,12 +47,12 @@ public class daoUsuario {
     }
 
     public ArrayList<Usuario> selectUsuarios(){
-        ArrayList<Usuario> lista=new ArrayList<Usuario>();
+        ArrayList<Usuario> lista = new ArrayList<Usuario>();
         lista.clear();
         Cursor cr=sql.rawQuery("select * from usuario", null);
-        if (cr!=null &&cr.moveToFirst()){
+        if (cr!=null && cr.moveToFirst()){
             do {
-                Usuario u=new Usuario();
+                Usuario u =new Usuario();
                 u.setId(cr.getInt(0));
                 u.setUsuario(cr.getString(1));
                 u.setPassword(cr.getString(2));
@@ -108,5 +108,8 @@ public class daoUsuario {
         cv.put("nombre",u.getNombre());
         cv.put("ap",u.getApellidos());
         return (sql.update("usuario",cv,"id="+u.getId(),null)>0);
+    }
+    public boolean deleteUsuario (int id){
+        return (sql.delete("usuario","id="+id, null)>0);
     }
 }

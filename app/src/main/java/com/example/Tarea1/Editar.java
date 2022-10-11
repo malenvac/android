@@ -26,6 +26,8 @@ Intent x;
         ediApellido = (EditText) findViewById(R.id.EdiApellido);
         btnEdiActualizar = (Button) findViewById(R.id.btnEdiActualizar);
         btnCancelar = (Button) findViewById(R.id.btnEdiCancelar);
+        btnEdiActualizar.setOnClickListener(this);
+        btnCancelar.setOnClickListener(this);
 
         Bundle bundle = getIntent().getExtras();
         id=bundle.getInt("Id");
@@ -41,27 +43,26 @@ Intent x;
         public void onClick(View v) {
             switch (v.getId()){
                 case R.id.btnEdiActualizar:
-                    Usuario u=new Usuario();
                     u.setUsuario(ediUser.getText().toString());
                     u.setPassword(ediPass.getText().toString());
                     u.setNombre(ediNombre.getText().toString());
                     u.setApellidos(ediApellido.getText().toString());
-
-
                     if(!u.isNull()){
                         Toast.makeText(this,"ERROR: Campos vacios", Toast.LENGTH_LONG).show();
                     } else if (dao.updateUsuario(u)){
                         Toast.makeText(this,"Actualización exitosa", Toast.LENGTH_LONG).show();
-                        Intent i2=new Intent(Editar.this,SplashScreen.class);
+                        Intent i2=new Intent(Editar.this,Iniciar.class);
+                        i2.putExtra("Id", u.getId());
                         startActivity(i2);
                         finish();
                     }else {
-                        Toast.makeText(this,"El usuario ya se encuentra registrado", Toast.LENGTH_LONG).show();
+                        Toast.makeText(this,"No se puede actualizar", Toast.LENGTH_LONG).show();
                     }
                     break;
                 case R.id.btnEdiCancelar:
-                    Intent i = new Intent(Editar.this,SplashScreen.class);
-                    startActivity(i);
+                    Intent i2 = new Intent(Editar.this,Iniciar.class);
+                    i2.putExtra("Id", u.getId());
+                    startActivity(i2);
                     finish();
                     break;
             }
