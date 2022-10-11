@@ -11,6 +11,10 @@ import android.widget.TextView;
 public class Iniciar extends AppCompatActivity implements View.OnClickListener {
 Button btnEditar, btnEliminar, btnMostrar, btnSalir;
 TextView nombre;
+int id=0;
+Usuario u;
+daoUsuario dao;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,14 +30,21 @@ TextView nombre;
         btnMostrar.setOnClickListener(this);
         btnSalir.setOnClickListener(this);
 
+        Bundle b = getIntent().getExtras();
+        id = b.getInt("Id");
+        dao = new daoUsuario(this);
+        u=dao.getUsuarioById(id);
+        nombre.setText("Hola " + u.getNombre() + " " + u.getApellidos());
+
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btnEditar:
-                Intent i3 = new Intent(Iniciar.this,Editar.class);
-                startActivity(i3);
+                Intent a = new Intent(Iniciar.this,Editar.class);
+                a.putExtra("Id", id);
+                startActivity(a);
                 finish();
                 break;
             case R.id.btnEliminar:

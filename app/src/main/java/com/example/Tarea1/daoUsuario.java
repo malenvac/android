@@ -101,4 +101,12 @@ public class daoUsuario {
         }
         return null;
     }
+    public boolean updateUsuario (Usuario u){
+        ContentValues cv=new ContentValues();
+        cv.put("usuario",u.getUsuario());
+        cv.put("pass",u.getPassword());
+        cv.put("nombre",u.getNombre());
+        cv.put("ap",u.getApellidos());
+        return (sql.update("usuario",cv,"id="+u.getId(),null)>0);
+    }
 }
