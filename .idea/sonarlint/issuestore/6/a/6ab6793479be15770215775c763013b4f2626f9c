@@ -1,0 +1,12 @@
+
+1
+java:S1700"Rename field "Usuario"(Ξ“¥°ψÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(τυ½
+k	java:S116"QRename this field "Nombre" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ξ“¥°ψÿÿÿÿ
+n	java:S116"TRename this field "Apellidos" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ξ“¥°ψÿÿÿÿ
+l	java:S116"RRename this field "Usuario" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ξ“¥°ψÿÿÿÿ
+m	java:S116"SRename this field "Password" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ξ“¥°ψÿÿÿÿ
+a
+java:S1659"FDeclare "Apellidos" and all following declarations on a separate line.(Ξ“¥°ψÿÿÿÿ
+\
+java:S1126"AReplace this if-then-else statement by a single return statement.(άπ²Υÿÿÿÿÿ

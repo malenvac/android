@@ -40,7 +40,7 @@ public class SplashScreen extends AppCompatActivity implements View.OnClickListe
               }else if(dao.login(u,p)==1){
                   Usuario ux=dao.getUsuario(u,p);
                   Toast.makeText(this, "Datos correctos", Toast.LENGTH_SHORT).show();
-                  Intent i2= new Intent(SplashScreen.this,Inicio.class);   //Me lleva a la pantalla de inicio//
+                  Intent i2= new Intent(SplashScreen.this,Iniciar.class);   //Me lleva a la pantalla de inicio//
                   i2.putExtra("Id", ux.getId());
                   startActivity(i2);
 
