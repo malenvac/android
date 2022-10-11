@@ -18,9 +18,8 @@ public class SplashScreen extends AppCompatActivity implements View.OnClickListe
 
         user=(EditText) findViewById(R.id.UserSingIn);
         pass=(EditText)findViewById(R.id.PasswordSingIn);
-        btnEntrar=(Button)findViewById(R.id.singIn);
-        btnRegistrar=(Button)findViewById(R.id.singUp1);
-
+        btnEntrar=(Button)findViewById(R.id.btnEntrar);
+        btnRegistrar=(Button)findViewById(R.id.btnRegistrar);
         btnEntrar.setOnClickListener(this);
         btnRegistrar.setOnClickListener(this);
 
@@ -29,9 +28,9 @@ public class SplashScreen extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
       switch (v.getId()){
-          case R.id.singIn:
+          case R.id.btnEntrar:
               break;
-          case R.id.singUp1:
+          case R.id.btnRegistrar:
               Intent i= new Intent(SplashScreen.this,SingUp.class);
               startActivity(i);
               break;

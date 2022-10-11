@@ -64,7 +64,7 @@
         style="@style/forgotPassword"
         android:text="@string/forgot_password"
         android:textAllCaps="false"
-        app:layout_constraintBottom_toTopOf="@+id/singIn"
+        app:layout_constraintBottom_toTopOf="@+id/btnEntrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.673"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,7 +72,7 @@
         app:layout_constraintVertical_bias="0.212" />
 
     <Button
-        android:id="@+id/singIn"
+        android:id="@+id/btnEntrar"
         style="@style/bottons"
         android:background="@drawable/borde_redondo"
         android:text="@string/login"
@@ -83,7 +83,7 @@
         app:layout_constraintVertical_bias="0.182" />
 
     <Button
-        android:id="@+id/singUp1"
+        android:id="@+id/btnRegistrar"
         style="@style/createAccount"
         android:layout_width="247dp"
         android:layout_height="53dp"

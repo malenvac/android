@@ -13,11 +13,11 @@ public class daoUsuario {
     ArrayList<Usuario> lista;
     SQLiteDatabase sql;
     String bd="BDUsuarios";
-    String tabla="create table if not exists usuario (id integer primary key autoincrement,usuario text, pass text, nombre text, ap text)";
+    String tabla = "create table if not exists usuario (id integer primary key autoincrement,usuario text, pass text, nombre text, ap text)";
 
     public daoUsuario(Context c){
         this.c= c;
-        sql= c.openOrCreateDatabase(bd,c.MODE_PRIVATE,null);
+        sql= c.openOrCreateDatabase(bd, c.MODE_PRIVATE,null);
         sql.execSQL(tabla);
         u=new Usuario();
 
@@ -29,7 +29,6 @@ public class daoUsuario {
             cv.put("pass",u.getPassword());
             cv.put("nombre",u.getNombre());
             cv.put("ap",u.getApellidos());
-
             return (sql.insert("usuario",null,cv)>0);
         }else {
             return false;

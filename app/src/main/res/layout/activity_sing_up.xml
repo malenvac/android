@@ -90,4 +90,16 @@
         app:layout_constraintTop_toTopOf="@+id/PasswordSingUp"
         app:layout_constraintVertical_bias="0.927" />
 
+    <Button
+        android:id="@+id/btnRegCancelar"
+        style="@style/createAccount"
+        android:layout_width="247dp"
+        android:layout_height="53dp"
+        android:background="#00FFFFFF"
+        android:text="@string/cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSingUp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
