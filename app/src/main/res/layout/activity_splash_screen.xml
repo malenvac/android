@@ -5,33 +5,37 @@
     android:id="@+id/button1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fondo_claro"
+    android:background="@color/white"
     tools:context=".SplashScreen">
 
     <ImageView
         android:id="@+id/logoLogin"
         style="@style/ImageViewLogo"
-        android:layout_width="380dp"
-        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
         android:contentDescription="@string/descriptionLogo"
-        android:src="@drawable/logo"
+        android:src="@drawable/logopeq"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.008" />
 
     <TextView
         android:id="@+id/textView"
         style="@style/TextTitlePri"
+        android:layout_width="344dp"
+        android:layout_height="46dp"
+        android:fontFamily="@font/libert"
         android:text="@string/login"
-        app:layout_constraintBottom_toTopOf="@+id/UserSingIn"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/User"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logoLogin"
-        app:layout_constraintVertical_bias="0.516" />
+        app:layout_constraintVertical_bias="0.557" />
 
     <EditText
         android:id="@+id/User"
@@ -62,20 +66,22 @@
     <TextView
         android:id="@+id/forgotPassword"
         style="@style/forgotPassword"
+        android:fontFamily="@font/libertbold"
         android:text="@string/forgot_password"
         android:textAllCaps="false"
-        app:layout_constraintBottom_toTopOf="@+id/btnEntrar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.673"
+        app:layout_constraintHorizontal_bias="0.345"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PasswordSingIn"
-        app:layout_constraintVertical_bias="0.212" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.734" />
 
     <Button
         android:id="@+id/btnEntrar"
         style="@style/bottons"
-        android:background="@drawable/borde_redondo"
         android:text="@string/login"
+        android:fontFamily="@font/libertbold"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -84,17 +90,21 @@
 
     <Button
         android:id="@+id/btnRegistrar"
-        style="@style/createAccount"
+        style="?attr/materialButtonOutlinedStyle"
         android:layout_width="247dp"
         android:layout_height="53dp"
-        android:background="#00FFFFFF"
         android:text="@string/create_new_account"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:fontFamily="@font/libertbold"
+        android:textStyle="bold"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logoLogin"
-        app:layout_constraintVertical_bias="0.728" />
+        app:layout_constraintVertical_bias="0.828"
+        app:strokeColor="@color/principal" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

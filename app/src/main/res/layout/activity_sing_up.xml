@@ -4,31 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fondo_claro"
+    android:background="@color/white"
     tools:context=".SplashScreen">
+
 
     <ImageView
         android:id="@+id/logoLogin"
         style="@style/ImageViewLogo"
-        android:layout_width="380dp"
-        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
         android:contentDescription="@string/descriptionLogo"
-        android:src="@drawable/logo"
+        android:src="@drawable/logopeq"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-
     <TextView
         android:id="@+id/textView"
         style="@style/TextTitlePri"
-        android:layout_width="145dp"
-        android:layout_height="47dp"
-        android:text="@string/sing_up"
+        android:layout_width="344dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/libert"
+        android:text="Crear cuenta"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logoLogin" />
 
@@ -79,26 +82,32 @@
 
     <Button
         android:id="@+id/btnRegRegistrar"
-        style="@style/bottonsUp"
-        android:background="@drawable/borde_redondo"
-        android:text="@string/sing_up"
+        style="@style/bottons"
+        android:fontFamily="@font/libertbold"
+        android:text="Registrarse"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.836" />
+        app:layout_constraintVertical_bias="0.8" />
 
     <Button
         android:id="@+id/btnRegCancelar"
-        style="@style/createAccount"
+        style="?attr/materialButtonOutlinedStyle"
         android:layout_width="247dp"
         android:layout_height="53dp"
-        android:layout_marginBottom="16dp"
-        android:background="#00FFFFFF"
-        android:text="@string/cancelar"
+        android:fontFamily="@font/libertbold"
+        android:text="Regresar"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRegRegistrar" />
+        app:layout_constraintTop_toBottomOf="@+id/logoLogin"
+        app:layout_constraintVertical_bias="0.907"
+        app:strokeColor="@color/principal" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

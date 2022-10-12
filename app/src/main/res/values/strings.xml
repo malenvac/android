@@ -3,18 +3,18 @@
     <string name="title_activity_splash_sreen">SplashSreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name="login">Sing In</string>
+    <string name="login">Iniciar sesion</string>
     <string name="registro">Sing Up</string>
     <string name="descriptionLogo">Logo Aqua</string>
-    <string name="user">User</string>
-    <string name="password">Password</string>
-    <string name="forgot_password">Forgot password?</string>
-    <string name="create_new_account">Create new account</string>
+    <string name="user">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="forgot_password">Olvide mi contraseña</string>
+    <string name="create_new_account">Crear cuenta</string>
     <string name="sing_up">Sing Up</string>
     <string name="imagen">imagen</string>
-    <string name="nombre">Name</string>
-    <string name="apellido">Last name</string>
-    <string name="aqua">AQUA</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="aqua">Tarea</string>
     <string name="cancelar">Cancelar</string>
 
 

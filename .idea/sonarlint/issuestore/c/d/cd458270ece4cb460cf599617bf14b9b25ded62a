@@ -1,9 +1,0 @@
-
-m
-java:S1301!"KReplace this "switch" statement by "if" statements to increase readability.(×“¾ñùÿÿÿÿ8ûàœ²¼0
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ô˜õ½
-?
-java:S1659""Declare "pass" on a separate line.(ÓáÔ8‘áœ²¼0
-L
-java:S1659"*Declare "btnRegistrar" on a separate line.(â¿®úÿÿÿÿ8‘áœ²¼0
-C	java:S131!""Add a default case to this switch.(×“¾ñùÿÿÿÿ8–áœ²¼0

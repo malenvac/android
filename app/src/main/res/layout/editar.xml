@@ -4,33 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fondo_claro"
+    android:background="@color/white"
     tools:context=".Editar">
 
     <ImageView
         android:id="@+id/logoLogin"
         style="@style/ImageViewLogo"
-        android:layout_width="380dp"
-        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
         android:contentDescription="@string/descriptionLogo"
-        android:src="@drawable/logo"
+        android:src="@drawable/logopeq"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.008" />
 
 
     <TextView
         android:id="@+id/textView"
         style="@style/TextTitlePri"
-        android:layout_width="239dp"
-        android:layout_height="48dp"
+        android:layout_width="344dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/libert"
         android:text="Editar usuario"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/logoLogin"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/EdiUser"
@@ -80,9 +87,10 @@
 
     <Button
         android:id="@+id/btnEdiActualizar"
-        style="@style/bottonsUp"
-        android:background="@drawable/borde_redondo"
+        style="@style/bottons"
         android:text="Actualizar"
+        android:fontFamily="@font/libertbold"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,12 +99,16 @@
 
     <Button
         android:id="@+id/btnEdiCancelar"
-        style="@style/createAccount"
+        style="?attr/materialButtonOutlinedStyle"
         android:layout_width="247dp"
         android:layout_height="53dp"
-        android:layout_marginBottom="16dp"
-        android:background="#00FFFFFF"
+        android:fontFamily="@font/libertbold"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
         android:text="@string/cancelar"
+        app:strokeColor="@color/principal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -4,31 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fondo_claro"
+    android:background="@color/white"
     tools:context=".Mostrar">
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="411dp"
-        android:layout_height="178dp"
+        style="@style/ImageViewLogo"
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
+        android:contentDescription="@string/descriptionLogo"
+        android:src="@drawable/logopeq"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:layout_constraintVertical_bias="0.008" />
 
     <TextView
         android:id="@+id/textView2"
         style="@style/TextTitlePri"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:textAlignment="center"
-        android:text="Lista de usuarios"
+        android:layout_width="344dp"
+        android:layout_height="46dp"
+        android:fontFamily="@font/libert"
+        android:text="Usuarios registrados"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.265" />
+        app:layout_constraintVertical_bias="0.277" />
 
     <ListView
         android:id="@+id/lista"
